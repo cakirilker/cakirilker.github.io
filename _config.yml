@@ -24,9 +24,9 @@ github_username:  cakirilker
 permalink: /blog/:year/:month/:day/:title
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
