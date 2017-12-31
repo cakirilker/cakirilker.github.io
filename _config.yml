@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: iIkercakir
 github_username:  cakirilker
+linkedin_username: ilker-çakır
 permalink: /blog/:year/:month/:day/:title
 # Build settings
 markdown: kramdown
