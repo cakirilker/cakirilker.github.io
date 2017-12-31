@@ -5,7 +5,7 @@ hiredate: 2015-02-01
 enddate: 2015-03-01
 ---
 <li>
-ETIBOR is Turkey’s largest chemical producer and exporter company.
+ETIBOR is Turkey's largest chemical producer and exporter company.
 </li>  
 <li>
 Worked as a Technical Personal in Human Resources Department.
