@@ -3,7 +3,7 @@
 {% for job in jobs reversed %}
 <div class="desc col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <h3><strong>{{job.companyname}}</strong> - {{job.jobtitle}}</h3>
-    <h4>{{ job.hiredate | date: "%-B %Y" | upcase }} - {{ job.enddate | date: "%-B %Y" | upcase }}</h4>
+    <h4>{{ job.hiredate | date: "%-B %Y" | upcase }} - {% if job.enddate == null %}Present{% else %}{{ job.enddate | date: "%-B %Y" | upcase }}{% endif %}</h4>
     <div class="row">
         <img class="image-container small-image col-xs-1 col-sm-2 col-md-4 col-lg-2" src="/assets/img/{{job.companylogo}}" />
         <div class="details col-xs-12 col-sm-10 col-md-10 col-lg-10">
