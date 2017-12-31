@@ -396,7 +396,6 @@ section {
     margin: 0px !important;
     padding: 0px !important;
 }
-
 @media only screen and (max-width: 479px) {
     .language > a span:first-child:before {
         content: '';

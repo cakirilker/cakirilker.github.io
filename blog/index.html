@@ -1,10 +1,130 @@
 ---
-layout: default
+layout: blog
 title: Ilker Cakir's Blog
 ---
-<h1>{{ page.title }}</h1>
-<ul class="posts">
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> >> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<section class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+    <div class="section-one">
+        <div class="article-image">
+            <img src="/assets/img/article-placeholder.jpg" class="img" />
+        </div>
+        <div class="inner-section green-border">
+            <h1>Lorem Ipsum Header</h1>
+            <div class="info">
+                <div>June 13, 2017</div>
+                <div>by <a href="#" title="#">Ilker Cakir</a></div>
+                <div>in <a href="#" title="#">Programming</a></div>
+                <div>3 min read</div>
+            </div>
+            <div class="details">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <h3 class="item-link"><a href="#">Continue Reading...</a></h3>
+            <hr />
+            <div class="row article-footer">
+                <div class="article-tags col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a href="#">#computer</a>
+                    <a href="#">#science</a>
+                    <a href="#">#modelling</a>
+                    <a href="#">#maya</a>
+                    <a href="#">#animation</a>
+                </div>
+                <div class="article-share col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div><i class="fa fa-share-alt"></i>Share</div>
+                    <div><i class="fa fa-eye"></i>86 Views</div>
+                    <div><i class="fa fa-comments"></i>36 Comments</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<aside class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="aside-one orange-border col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="image-container row">
+            <div class="profile-image img img-circle">
+            </div>
+        </div>
+        <div class="inner-section profile row">
+            <h1>Ilker Cakir</h1>
+            <p class="profile-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </div>
+    </div>
+    <div class="aside-one social blue-border inner-section reverse col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <a class="item-link" href="https://twitter.com/iIkercakir" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="item-link" href="https://www.linkedin.com/in/ilker-%C3%A7ak%C4%B1r-492b50a6/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="item-link" href="https://github.com/Darxre?tab=repositories" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+    <div class="aside-one blue-border inner-section reverse col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>Most Popular By</h1>
+        <ul id="myTabs" class="content-data nav nav-tabs" data-tabs="tabs">
+            <li role="presentation" class="active col-xs-4 col-sm-4 col-md-4 col-lg-4"><a data-toggle="tab" href="#views">Views</a></li>
+            <li role="presentation" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a aria-controls="profile" role="tab" data-toggle="tab" href="#likes">Likes</a></li>
+            <li role="presentation" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a aria-controls="profile" role="tab" data-toggle="tab" href="#comments">Comments</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="views" class="tab-pane fade in active" role="tabpanel">
+                <div class="row article-item" id="forest">
+                    <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img class="article-thumbnail img img-circle" src="/assets/img/article-placeholder.jpg" />
+                        <div class="article-summary col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <h4>Even Forest Powers Have Limits</h4>
+                            <div class="sub-info">June 13, 2017</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row article-item" id="forest">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img class="article-thumbnail img img-circle" src="/assets/img/article-placeholder-2.jpg" />
+                        <div class="article-summary col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <h4>There is something in the New Yorks air that makes sleep useless</h4>
+                            <div class="sub-info">June 13, 2017</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row article-item" id="forest">
+                    <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img class="article-thumbnail img img-circle" src="/assets/img/package-icon.png" />
+                        <div class="article-summary col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <h4>Even Forest Powers Have Limits</h4>
+                            <div class="sub-info">June 13, 2017</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="likes" class="tab-pane fade" role="tabpanel">
+                <h3>Likes</h3>
+                <p>Some content.</p>
+            </div>
+            <div id="comments" class="tab-pane fade" role="tabpanel">
+                <h3>Comments</h3>
+                <p>Some content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="aside-one red-border inner-section reverse col-xs-8 col-sm-8 col-md-12 col-lg-12 col-sm-offset-2 col-xs-offset-2 col-md-offset-0">
+        <h1>Archives</h1>
+        <div class="details">
+            <div class="row" style="margin: 20px -15px; font-family: Inconsolata,monospace;">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: flex;">
+                    <h3 style="align-self: center;">March 2015</h3>
+                    <p style="margin: auto 0 auto auto; font-size: 1.4em" class="item-link"><a href="#">85</a></p>
+                </div>
+            </div>
+            <div class="row" style="margin: 20px -15px;">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: flex;">
+                    <h3 style="align-self: center;">February 2015</h3>
+                    <p style="margin: auto 0 auto auto; font-family: Inconsolata,monospace; font-size: 1.4em" class="item-link"><a href="#">32</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<!--<h1>{{ page.title }}</h1>
+           <ul class="posts">
+               {% for post in site.posts %}
+               <li><span>{{ post.date | date_to_string }}</span> >> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+               {% endfor %}
+           </ul>-->
