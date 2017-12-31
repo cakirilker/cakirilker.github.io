@@ -1,16 +1,16 @@
 <h2>Experience.</h2>
+{% assign jobs = site.experiences | sort: 'hiredate' %}
+{% for job in jobs reversed %}
 <div class="desc col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    {% for experience in site.experiences  %}
-    <h3><strong>{{experience.companyname}}</strong> - {{experience.jobtitle}}</h3>
-    <h4>{{ experience.hiredate | date: "%-B %Y" | upcase }} - {{ experience.enddate | date: "%-B %Y" | upcase }}</h4>
+    <h3><strong>{{job.companyname}}</strong> - {{job.jobtitle}}</h3>
+    <h4>{{ job.hiredate | date: "%-B %Y" | upcase }} - {{ job.enddate | date: "%-B %Y" | upcase }}</h4>
     <div class="row">
-        <div class="image-container small-image col-xs-1 col-sm-2 col-md-4 col-lg-2" id="matchback">
-        </div>
+        <img class="image-container small-image col-xs-1 col-sm-2 col-md-4 col-lg-2" src="/assets/img/{{job.companylogo}}" />
         <div class="details col-xs-12 col-sm-10 col-md-10 col-lg-10">
             <ul>
-                {{experience.content}}
+                {{job.content}}
             </ul>
         </div>
     </div>
-    {% endfor %}
 </div>
+{% endfor %}

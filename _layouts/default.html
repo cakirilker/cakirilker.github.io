@@ -77,3 +77,44 @@
     {{ content }}
 </body>
 </html>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js" async defer></script>
+<script>
+    (function ($) {
+        $(function () {
+            var skills = ["skiing", "fencing", "reading about history", "design"],
+                counter = skills.length - 1,
+                previousSkill = $(".hobbies"),
+                arraylength = skills.length - 1;
+
+            function display_skills() {
+                if (counter === arraylength) {
+                    counter = 0;
+                }
+                else {
+                    counter++;
+                }
+                $('.hobbies > span > strong').fadeOut(200, function () {
+                    $(this).text(skills[counter]).fadeIn(200);
+                });
+
+            }
+
+            display_skills();
+
+            setInterval(function () {
+                display_skills();
+            }, 2500);
+        });
+    })(jQuery);
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-101860874-1', 'auto');
+    ga('send', 'pageview');
+</script>

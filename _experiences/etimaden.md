@@ -3,6 +3,7 @@ companyname: "ETI MADEN"
 jobtitle: "Technical Support - Intern"
 hiredate: 2015-02-01
 enddate: 2015-03-01
+companylogo: etimaden.png
 ---
 <li>
 ETIBOR is Turkey's largest chemical producer and exporter company.

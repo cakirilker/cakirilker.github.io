@@ -142,25 +142,7 @@ section {
     display: flex;
     overflow: hidden;
 }
-    /*
-  background: #F78888;
-  background: #F3D250;
-  background: #90CCF4;
 
-  background: #8BC34A;
-  background: #212121;
-  background: #F3D250;
-
-  background: #DB5461;
-  background: #686963;
-  background: #3D5467;
-
-  #FEFFFE
-  #E0FF4F
-  #FF6663
-  #BFD7EA
-  #0B3954
-*/
     .section-area:nth-child(3n+3) {
         color: #F5F5F5;
         background: #0B3954;
@@ -190,7 +172,7 @@ section {
     background-size: 150px;
     width: 150px;
     height: 150px;
-    background-image: url('/images/profile.jpg');
+    background-image: url('/assets/img/profile.jpg');
     margin: 15px auto 15px auto;
 }
 
@@ -284,38 +266,28 @@ section {
     text-align: center;
 }
 
-#matchback {
-    background-image: url('/images/matchback.png');
-}
-
-#etimaden {
-    background-image: url('/images/eti_maden.png');
-}
-
 #ihsantugan {
-    background-image: url('/images/ihsan_tugan.jpg');
+    background-image: url('/assets/img/ihsan_tugan.jpg');
 }
 
 #gokhanemniyetli {
-    background-image: url('images/gokhan_emniyetli.jpg');
+    background-image: url('/assets/img/gokhan_emniyetli.jpg');
 }
 
 #mattdewane {
     /*background-image:
   url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAMnAAAAJGViZWU0YjVjLWJiZjEtNDY0NS1iZWZhLTU1MWRlNjgyNmY3Mg.jpg);*/
-    background-image: url(../_images/profile_holder.png);
+    background-image: url('/assets/img/profile_holder.png');
 }
 
-.experience .image-container {
-    background-image: url(../_images/custom-icon-iphone-white-150x150.png);
-}
+
 
 .projects .image-container {
-    background-image: url(../_images/custom-icon-composer-570x570.png);
+    background-image: url('/assets/img/custom-icon-composer-570x570.png');
 }
 
 .references .image-container {
-    background-image: url(../_images/custom-icon-iphone-white-150x150.png);
+    background-image: url('/assets/img/custom-icon-iphone-white-150x150.png');
 }
 
 /*SOCIAL CONNECTION*/
@@ -396,7 +368,7 @@ section {
     color: #FAFAFA;
 }
 
-.featured-project .project-details {
+.featured-project .project-details {#
     background: rgba(33,33,33,0.8);
     color: #FAFAFA;
     display: none;

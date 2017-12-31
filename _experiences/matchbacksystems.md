@@ -3,6 +3,7 @@ companyname: "MatchBack Systems"
 jobtitle: "Software Developer - Intern"
 hiredate: 2016-01-01
 enddate: 2016-02-01
+companylogo: matchback.png
 ---
 <li>
 MatchBack Systems is a SaaS provider that aims to reduce costs of shipping and improve efficiency for logistic companies.
