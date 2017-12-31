@@ -1,29 +1,83 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>İlker Çakır - Software Developer Portfolio</title>
+    <meta name="description" content="I'm İlker Çakır, a software developer from Turkey. You can view my experiences, references and projects.">
+    <meta name="author" content="İlker Çakır">
+    <meta name="classification" content="Portfolio Website">
+    <meta name="content-language" content="en">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="5 days">
+    <meta charset="UTF-8">
+    <meta property="og:url" content="https://cakirilker.github.io/en/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="İlker Çakır - Software Developer Portfolio">
+    <meta property="og:description" content="I'm İlker Çakır, a software developer from Turkey. You can view my experiences, references and projects.">
+    <meta property="og:site_name" content="İlker Çakır - Software Developer Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@iIkercakir">
+    <meta name="twitter:creator" content="@iIkercakir">
+    <meta name="twitter:url" content="https://cakirilker.github.io/en/">
+    <meta name="twitter:title" content="İlker Çakır">
+    <meta name="twitter:description" content="I'm İlker Çakır, a software developer from Turkey. You can view my experiences, references and projects.">
+    <link rel="canonical" href="https://cakirilker.github.io/en/">
+    <link rel="alternate" href="https://cakirilker.github.io" hreflang="x-default" />
+    <link rel="alternate" href="https://cakirilker.github.io/en/" hreflang="en-us" />
+    <link rel="alternate" href="https://cakirilker.github.io/tr/" hreflang="tr-tr" />
+    <link rel="icon" type="image/jpg" href="https://www.spreadshirt.com/image-server/v1/designs/12664829,width=178,height=178/valknut.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/flag-css.min.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+    <meta name="google-site-verification" content="3FLT_QMzF7m0rsl6z3fo5RpV3NiWQF5kOgsyK8XoGGE" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-
-        {{ content }}
-
-    </div><!-- /.container -->
-    <footer>
-        <ul>
-            <li><a href="mailto:cakir.ilker@outlook.com">email</a></li>
-            <li><a href="https://github.com/cakirilker">github.com/cakirilker</a></li>
-        </ul>
-    </footer>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand fa fa-code" href="http://cakirilker.github.io/en/">
+                        <span>İlker Çakır</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li class="dropdown language">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://cakirilker.github.io/en/"><span class="flag flag-shn"></span>English</a></li>
+                                <li><a href="http://cakirilker.github.io/tr/"><span class="flag flag-tur"></span>Türkçe</a></li>
+                            </ul>
+                        </li>
+                        <li id="resume">
+                            <a href="https://cakirilker.github.io/en/ilker-cakir-resume.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {{ content }}
 </body>
 </html>
+<script src="../_assets/js/bootstrap.min.js" async defer></script>
+<script src="../_assets/js/index.js" async defer></script>
+<script src="../_assets/js/default.js" async defer></script>
+

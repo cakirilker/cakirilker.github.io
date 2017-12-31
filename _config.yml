@@ -18,13 +18,12 @@ email: cakir.ilker@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   A personel blog site created with Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cakirilker.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: iIkercakir
 github_username:  cakirilker
 permalink: /blog/:year/:month/:day/:title
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 encoding: utf-8
