@@ -3,14 +3,15 @@ layout: blog
 title: Ilker Cakir's Blog
 ---
 <section class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+    {% for post in site.posts %}
     <div class="section-one">
         <div class="article-image">
             <img src="/assets/img/article-placeholder.jpg" class="img" />
         </div>
         <div class="inner-section green-border">
-            <h1>Lorem Ipsum Header</h1>
+            <h1>{{post.title}}</h1>
             <div class="info">
-                <div>June 13, 2017</div>
+                <div>{{ post.date | date_to_string }}<</div>
                 <div>by <a href="#" title="#">Ilker Cakir</a></div>
                 <div>in <a href="#" title="#">Programming</a></div>
                 <div>3 min read</div>
@@ -38,6 +39,7 @@ title: Ilker Cakir's Blog
             </div>
         </div>
     </div>
+    {% endfor %}
 </section>
 <aside class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     <div class="aside-one orange-border col-xs-12 col-sm-12 col-md-12 col-lg-12">
