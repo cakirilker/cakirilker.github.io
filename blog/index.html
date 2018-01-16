@@ -5,31 +5,35 @@ title: Ilker Cakir's Blog
 <section class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
     {% for post in site.posts %}
     <div class="section-one">
-        <div class="article-image">
+        <!--<div class="article-image">
             <img src="/assets/img/article-placeholder.jpg" class="img" />
-        </div>
+        </div>-->
         <div class="inner-section green-border">
             <h1>{{post.title}}</h1>
             <div class="info">
-                <div>{{ post.date | date_to_string }}<</div>
-                <div>by <a href="#" title="#">Ilker Cakir</a></div>
-                <div>in <a href="#" title="#">Programming</a></div>
+                <div>{{ post.date | date_to_string }}</div>
+                <div>by <a href="#" title="#">{{post.author}}</a></div>
+                <div>in <a href="#" title="#">{{post.category}}</a></div>
                 <div>3 min read</div>
             </div>
             <div class="details">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {{post.summary}}
                 </p>
             </div>
             <h3 class="item-link"><a href="#">Continue Reading...</a></h3>
             <hr />
             <div class="row article-footer">
                 <div class="article-tags col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <a href="#">#computer</a>
+                    <!--<a href="#">#computer</a>
                     <a href="#">#science</a>
                     <a href="#">#modelling</a>
                     <a href="#">#maya</a>
-                    <a href="#">#animation</a>
+                    <a href="#">#animation</a>-->
+                    {% assign tags = post.tags | split: ',' %}
+                    {% for tag in tags %}
+                    <a href="#">{{tag}}</a>
+                    {% endfor %}
                 </div>
                 <div class="article-share col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div><i class="fa fa-share-alt"></i>Share</div>
