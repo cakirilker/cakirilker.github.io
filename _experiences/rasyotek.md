@@ -1,5 +1,5 @@
 ---
-companyname: "Rasyotek HR and IT"
+companyname: "Rasyotek Human Resources Information Inc."
 jobtitle: "Software Developer"
 hiredate: 2016-10-01
 enddate: 
