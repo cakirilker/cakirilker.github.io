@@ -1,0 +1,12 @@
+.pager >li  > a{
+    border-radius: 0px;
+    box-shadow: 2px 2px 3px #E0E0E0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: var(--main-dark-color);
+}
+.pager .next > a {
+    border-left: 5px solid var(--red-accent-color);
+}
+.pager .previous > a {
+    border-right: 5px solid var(--green-accent-color);
+}

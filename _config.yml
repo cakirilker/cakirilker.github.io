@@ -22,14 +22,24 @@ url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. 
 twitter_username: iIkercakir
 github_username:  cakirilker
 linkedin_username: ilker-çakır
-permalink: /blog/:year/:month/:title
+permalink: /blog/:year/:month/:title.html
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
 encoding: utf-8
 collections:
   - experiences
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 1
+  permalink: '/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
