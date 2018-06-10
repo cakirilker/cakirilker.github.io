@@ -1,9 +1,54 @@
----
+--- 
 
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+<html>
 
-<div class="post">
-    {{ content }}
-</div>
+<head>
+    <title>Blog - İlker Çakır</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../css/blog.css" />
+</head>
+<style>
+    .post-container {
+        box-shadow: 2px 2px 3px #E0E0E0;
+        border-radius: 2px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: white;
+        padding: 15px;
+    }
+    .post-content{
+        margin:10px 0px;
+    }
+</style>
+
+<body>
+    <section id="posts" class="no-background">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <article title="Asp.Net Core Automated Deployment (AWS,Jenkins, Docker, Nginx)" class="post-container" data-animate="none">
+                        <div class="post-title">
+                            <h2>{{ page.title }}</h2>
+                            <p class="meta">{{ page.date | date_to_string }}</p>
+                        </div>
+                        <div class="post-thumbnail post-image">
+                            <img src="../../../assets/img/article-placeholder.jpg" class="img-responsive" alt="Asp.Net Core Automated Deployment (AWS,Jenkins, Docker, Nginx)"
+                                width="2618" height="1098">
+                        </div>
+                        <div class="post-content">
+                            {{ content }}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
