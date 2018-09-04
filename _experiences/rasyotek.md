@@ -6,8 +6,11 @@ enddate:
 companylogo: rasyotek.png
 ---
 <li>
-Rasyotek offers human resources services and software solutions to other companies. As software solutions they're mainly providing HR softwares.
+Rasyotek Human Resources offers business solutions for government incentives, payroll services and reporting to most known companies of Turkey.
 </li>  
 <li>
-In a small group of development team I'm responsible for bug fixing and writing backend code of modules that are designed by project manager.
+In software development team I’m responsible for developing new features and improve existing features for existing projects. Also main developer of a project which talks to other projects via API’s. All projects are written with ASP.Net MVC in backend and JS/HTML5 in frontend.
 </li>           
+<li>
+Our team is mainly using entity framework in our projects and REST API’s to communicate and maintain data integrity between projects.
+</li>
