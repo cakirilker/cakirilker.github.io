@@ -1,28 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
     <style>
         .async-hide {
             opacity: 0 !important
         }
     </style>
-    <script>(function (a, s, y, n, c, h, i, d, e) {
-        s.className += ' ' + y; h.start = 1 * new Date;
-            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
-            (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
-        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-            { 'GTM-WZD8XRB': true });</script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-101860874-1', 'auto');
-        ga('require', 'GTM-WZD8XRB');
-        ga('send', 'pageview');
+     // GA goes here
     </script>
     <title>İlker Çakır - Software Developer Portfolio</title>
     <meta name="description" content="I'm İlker Çakır, a software developer from Turkey. You can view my experiences, references and projects.">
@@ -33,7 +18,7 @@
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="5 days">
     <meta charset="UTF-8">
-    <meta property="og:url" content="https://cakirilker.github.io">
+    <meta property="og:url" content="{{ site.url }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="İlker Çakır - Software Developer Portfolio">
     <meta property="og:description" content="I'm İlker Çakır, a software developer from Turkey. You can view my experiences, references and projects.">
@@ -42,12 +27,11 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@iIkercakir">
     <meta name="twitter:creator" content="@iIkercakir">
-    <meta name="twitter:url" content="https://cakirilker.github.io">
+    <meta name="twitter:url" content="{{ site.url }}">
     <meta name="twitter:title" content="İlker Çakır">
     <meta name="twitter:description" content="I'm İlker Çakır, a software developer from Turkey. You can view my experiences, references and projects.">
-    <link rel="canonical" href="https://cakirilker.github.io">
-    <link rel="icon" type="image/jpg" href="https://www.spreadshirt.com/image-server/v1/designs/12664829,width=178,height=178/valknut.png"
-    />
+    <link rel="canonical" href="{{ site.url }}">
+    <link rel="icon" type="image/jpg" href="https://www.spreadshirt.com/image-server/v1/designs/12664829,width=178,height=178/valknut.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -56,7 +40,6 @@
     <link rel="stylesheet" href="../css/navbar.css" />
     <meta name="google-site-verification" content="3FLT_QMzF7m0rsl6z3fo5RpV3NiWQF5kOgsyK8XoGGE" />
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -69,28 +52,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand fa fa-code" href="http://cakirilker.github.io">
+                    <a class="navbar-brand fa fa-code" href="{{ site.url }}">
                         <span>İlker Çakır</span>
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- <li><a href="/blog">Blog</a></li> -->
+                        <li><a href="{{ site.blog.url }}">Blog</a></li>
                         <li>
                             <a href="#experience">Experience</a>
                         </li>
-                        <!--<li class="dropdown language">
-                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="http://cakirilker.github.io/en/"><span class="flag flag-shn"></span>English</a></li>
-                                <li><a href="http://cakirilker.github.io/tr/"><span class="flag flag-tur"></span>Türkçe</a></li>
-                            </ul>
-                        </li>-->
                         <li id="resume">
-                            <a href="https://cakirilker.github.io/assets/pdf/ilker-cakir-resume.pdf" target="_blank">
+                            {% assign pdfUri = site.url | append:'/assets/pdf/ilker-cakir-resume.pdf' %}
+                            <a href="{{ pdfUri }}" target="_blank">
                                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>Resume
                             </a>
                         </li>
@@ -101,7 +75,6 @@
     </header>
     {{ content }}
 </body>
-
 </html>
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/bootstrap.min.js" async defer></script>

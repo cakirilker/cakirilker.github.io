@@ -18,16 +18,23 @@ email: cakir.ilker@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   A personel blog site created with Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cakirilker.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: iIkercakir
 github_username:  cakirilker
 linkedin_username: ilker-çakır
+
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll
   - jekyll-feed
   - jekyll-paginate
-  # - jekyll-paginate-v2
+  - minima
+  - tzinfo-data
+  - jekyll-assets
+  - coffee-script
+  - uglifier
+  - sass
 encoding: utf-8
 collections:
   - experiences
@@ -36,22 +43,7 @@ permalink: /blog/:year/:month/:title
 # Pagination Settings
 paginate: 2
 paginate_path: "/blog/page:num/"
-# pagination:
-#   enabled: true
-#   per_page: 2
-#   permalink: '/:num/'
-#   title: ':title - page :num of :max'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+# Custom Variables
+blog:
+  url: https://blog.cakirilker.com/
