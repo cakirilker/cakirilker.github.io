@@ -1,16 +1,15 @@
 ---
-companyname: "Rasyotek Human Resources Information Inc."
-jobtitle: "Software Developer"
+companyname: "Rasyotek Human Resources Information Technology Inc."
+jobtitle: "Software Development Specialist"
 hiredate: 2016-10-01
-enddate: 
+enddate: 2019-03-01
 companylogo: rasyotek.png
 ---
+<li>Rasyotek Human Resources offers business solutions for government incentives, payroll services and reporting to most known companies of Turkey.
+</li>
 <li>
-Rasyotek Human Resources offers business solutions for government incentives, payroll services and reporting to most known companies of Turkey.
-</li>  
-<li>
-In software development team I’m responsible for developing new features and improve existing features for existing projects. Also main developer of a project which talks to other projects via API’s. All projects are written with ASP.Net MVC in backend and JS/HTML5 in frontend.
+In software development team I am responsible for developing new features and improve existing features from backend to frontend. In addition, I am team leader of a recruitment project that used by various companies to find new employees.
 </li>           
 <li>
-Our team is mainly using entity framework in our projects and REST API’s to communicate and maintain data integrity between projects.
+As a tech stack we use ASP.Net MVC/.NET Core and SQL Server for backend and JS/HTML5 for frontend. Various projects communicating via RESTful APIs.
 </li>
