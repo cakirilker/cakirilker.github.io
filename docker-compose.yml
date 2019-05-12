@@ -2,7 +2,7 @@ version: '3.1'
 services:
   jekyll:
     image: jekyll/jekyll:pages
-    command: jekyll serve --watch --incremental
+    command: bash -c "chown -R jekyll:jekyll /srv/jekyll && jekyll serve --watch --incremental"
     ports:
       - 4000:4000
       - 35729:35729
