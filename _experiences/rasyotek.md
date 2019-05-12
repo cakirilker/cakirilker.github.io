@@ -9,7 +9,7 @@ companylogo: rasyotek.png
 </li>
 <li>
 In software development team I am responsible for developing new features and improve existing features from backend to frontend. In addition, I am team leader of a recruitment project that used by various companies to find new employees.
-</li>           
+</li>
 <li>
 As a tech stack we use ASP.Net MVC/.NET Core and SQL Server for backend and JS/HTML5 for frontend. Various projects communicating via RESTful APIs.
 </li>
