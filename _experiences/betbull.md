@@ -4,8 +4,9 @@ jobtitle: "Frontend Developer"
 hiredate: 2019-08-19
 enddate:
 companylogo: betbull.png
+description: "Built responsive single page applications with HTML, SASS, JS, React, Redux."
 ---
 
-<li>Developed online gambling web application and admin panel application for BetBull and Wynn Sports.</li>  
-<li>Used React for all applications and Node.js as a backend proxy api.</li>  
-<li>Implemented/Experienced best practices for React, SSR, GraphQL, State management and general web application structure to cover all use-cases.</li>
+<li>Developing in ReactJS application using ES6 standards, React Hooks, Redux for Wynn gambling app for U.S. market and new version of BetBull app in UK market. Also maintaining and developing new features for the live Betbull app.</li>  
+<li>Mentoring/Pair-programming with other team members on best practices and code optimizations.</li>  
+<li>Applying advanced CSS and JavaScript techniques to achieve pixel-perfect, elegant looking.</li>
