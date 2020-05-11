@@ -1,7 +1,7 @@
 ---
 companyname: "MatchBack Systems"
 jobtitle: "Software Developer Intern"
-hiredate: 2016-01-01
+hiredate: 2015-12-01
 enddate: 2016-05-01
 companylogo: matchback.png
 description: "Designed efficient solutions to reduce the analysis workload of the company."

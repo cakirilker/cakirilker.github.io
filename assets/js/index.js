@@ -1,4 +1,4 @@
-var skills = ["skiing", "fencing", "reading about history", "design"],
+var skills = ["skiing", "fencing", "reading about history", "designing stuff"],
     counter = skills.length - 1,
     previousSkill = $(".hobbies"),
     arraylength = skills.length - 1;
